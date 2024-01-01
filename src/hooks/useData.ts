@@ -28,8 +28,8 @@ const useData=<T>(endpoint:string)=>{
           setError(err.message);
         });
         return ()=>controller.abort()
-    }, []);
+    }, [endpoint]);
 
-    return{data,error,isLoading}
+    return {data, error, isLoading}
 }
 export default useData;
