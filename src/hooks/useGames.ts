@@ -20,7 +20,8 @@ export interface Game {
       '/games', { 
       params: { 
         genre: gameQuery.genre?.id,
-        platforms:gameQuery.platform?.id
+        platforms:gameQuery.platform?.id,
+        ordering:gameQuery.sortOrder
       } 
       }, 
       [gameQuery]
