@@ -1,5 +1,14 @@
 import "./App.css";
-import { Box, Flex, Grid, GridItem, Show } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Grid,
+  GridItem,
+  HStack,
+  Heading,
+  Show,
+  Text,
+} from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 import GameGrid from "./components/GameGrid";
 import GenreList from "./components/GenreList";
@@ -68,6 +77,10 @@ function App() {
           </Box>
           <GameGrid gameQuery={gameQuery} />
         </GridItem>
+        <Text whiteSpace="nowrap" textColor="gray">
+          &copy; 2024 Your Website Name. All rights reserved. | Designed by
+          Mithun T
+        </Text>
       </Grid>
     </>
   );
