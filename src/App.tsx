@@ -4,8 +4,6 @@ import {
   Flex,
   Grid,
   GridItem,
-  HStack,
-  Heading,
   Show,
   Text,
 } from "@chakra-ui/react";
